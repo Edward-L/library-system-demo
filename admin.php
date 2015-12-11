@@ -13,6 +13,9 @@
 ?>
 
 <html>
+<head>
+		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
+	</head>
 	<br/>
 	<h1>借书证办理</h1>
 	<form name = "resg" method = "post" action = "resg.php">

@@ -1,3 +1,7 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 <?php
 	require_once('config.php');
 
@@ -22,3 +26,4 @@
 
 
 ?>
+</html>

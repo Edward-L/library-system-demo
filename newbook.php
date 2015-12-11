@@ -1,3 +1,7 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 <?php
 	session_start();
 	if(!isset($_SESSION['stuName']))
@@ -25,4 +29,4 @@ if($bookNumber	&& $bookName && $bookAuthor && $bookPublishing)
 		echo "请验证你的输入信息";
 	}
 ?>
-
+</html>

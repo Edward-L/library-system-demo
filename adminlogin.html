@@ -1,14 +1,56 @@
-<html>
-	<head>
-		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
-	</head>
-	<form name = "login" action = "checkadmin.php" method = "post">
-		<div>
-			工号：<input type = "text" name = "adminNu">
-		</div>
-		<div>
-			密码：<input type = "password" name = "password">
-		</div>
-		<button type = "submit">登陆</button>
-	</form>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>管理员登录</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+   
+  </head>
+
+  <body>
+  <form name = "login" action = "checkadmin.php" method = "post">
+    <div class="container">
+      <div class="col-lg-4 col-lg-offset-4">
+      <form class="form-signin">
+        <h2 class="form-signin-heading" align=center>library---admin</h2>
+        <hr/>
+        <label for="inputUserNumber" class="sr-only" length='40'>admin number</label>
+        <input type="text" name="adminNu" id="UserNumber" class="form-control" placeholder="Admin Number" required autofocus>
+      </br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" id="Password" class="form-control" placeholder="Password" required>
+        </br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">submit</button>
+      
+    </div>
+    </div> <!-- /container -->
+  </form>
+
+
+   
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+
+  </body>
 </html>

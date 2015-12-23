@@ -23,10 +23,10 @@
 
 <?php
 	session_start();
-	if(!isset($_SESSION['stuName']))
+	if(!isset($_SESSION['adminName']))
 	{
 		echo "请登陆！";
-		header('Location:index.html');
+		header('Location: adminlogin.html');
 		exit;
 	}
 	else

@@ -45,12 +45,16 @@ if($bookNumber	&& $stuNumber )
 			$returntime = $row[1]+864000;
 			
 			$query = mysqli_query($db,"update lend set deadline = '$returntime',renewtimes = renewtimes - 1 where stuNumber = '$stuNumber' and lendNumber = '$bookNumber'")
-				or die("请验证你的输入信息");
+				or die("<div class='col-lg-4 col-lg-offset-4'>
+						<div class='alert alert-success' role='alert'>
+        				<strong>Warning!</strong> 请验证你的输入信息.
+      					</div>
+      					</div>");
 			printf("<div class='col-lg-4 col-lg-offset-4'>
-			<div class='alert alert-success' role='alert'>
-        <strong>Well done!</strong>续借成功.
-      </div>
-      </div>");
+					<div class='alert alert-success' role='alert'>
+        			<strong>Well done!</strong>续借成功.
+      				</div>
+      				</div>");
 	}
 	else
 	{

@@ -41,12 +41,16 @@ $maxNumber = $_POST['maxNumber'];
 	if($stuNumber && $stuName && $stuPassword && $maxNumber)
 	{
 		$query = mysqli_query($db,"insert into student values('$stuNumber','$stuName',md5('$stuPassword'),'$maxNumber',0)")
-			or die("请验证你的输入信息");
+			or die("<div class='col-lg-4 col-lg-offset-4'>
+					<div class='alert alert-success' role='alert'>
+       				<strong>Warning!</strong> 请验证你的输入信息.
+      				</div>
+      				</div>");
 		printf("<div class='col-lg-4 col-lg-offset-4'>
-			<div class='alert alert-success' role='alert'>
-        <strong>Well done!</strong> 办理成功.
-      </div>
-      </div>"); 
+				<div class='alert alert-success' role='alert'>
+        		<strong>Well done!</strong> 办理成功.
+      			</div>
+      			</div>"); 
 	}
 	else
 	{

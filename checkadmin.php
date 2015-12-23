@@ -27,7 +27,11 @@
 
 
 	$query = mysqli_query($db,"select adminName from admin where adminNumber = '$adminNum' and adminPassword = md5('$password')") 
-		or die("sql error");
+		or die("<div class='col-lg-4 col-lg-offset-4'>
+			<div class='alert alert-success' role='alert'>
+        <strong>Warning!</strong>请验证你的输入信息.
+      </div>
+      </div>");
 	if($row = mysqli_fetch_array($query))
 	{
 		session_start();

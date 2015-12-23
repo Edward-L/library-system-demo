@@ -41,7 +41,11 @@ $bookCategory = $_POST['bookCategory'];
 if($bookNumber	&& $bookName && $bookAuthor && $bookPublishing)
 	{
 		$query = mysqli_query($db,"insert into bookinfo values('$bookNumber','$bookName','$bookAuthor','$bookPublishing','$bookCategory','0')")
-			or die("请验证你的输入信息");
+			or die("<div class='col-lg-4 col-lg-offset-4'>
+      <div class='alert alert-success' role='alert'>
+        <strong>Warning!</strong>请验证你的输入信息.
+      </div>
+      </div>");
 		printf("<div class='col-lg-4 col-lg-offset-4'>
 			<div class='alert alert-success' role='alert'>
         <strong>Well done!</strong>录入成功.

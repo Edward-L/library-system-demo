@@ -58,7 +58,11 @@ if($bookNumber	&& $stuNumber )//是否都输了
 						$lendtime = time();
 						$returntime = time()+7776000;
 						$query = mysqli_query($db,"insert into lend values('$stuNumber','$bookNumber','$lendtime','$returntime',3)")
-							or die("请验证你的输入信息");
+							or die("<div class='col-lg-4 col-lg-offset-4'>
+									<div class='alert alert-success' role='alert'>
+       								<strong>Warning!</strong> 请验证你的输入信息.
+      								</div>
+      								</div>");
 						$query1 = mysqli_query($db,"update bookinfo set bookstate = 1 where bookNumber = '$bookNumber'");
 						$query2 = mysqli_query($db,"update student set lendCount = lendCount +1 where stuNumber = '$stuNumber'");
 						printf("

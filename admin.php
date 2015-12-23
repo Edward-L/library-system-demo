@@ -82,7 +82,7 @@
         
 </ul>
 </br>
-<div class="row">
+<v class="row">
 	<form name = "resg" method = "post" action = "resg.php">
 	<div class="col-md-2"><input type = "text" name = "stuNumber" placeholder="学号" class="form-control"></div>
  	<div class="col-md-2"><input type = "text" name = "stuName" placeholder="姓名" class="form-control"></div>
